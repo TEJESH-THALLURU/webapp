@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KK FUNDA Home Page</title>
-<link href="images/kkfunda.jpg" rel="icon">
+<title>Tejesh Home Page</title>
+
 <!-- Bootstrap CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
     body {
         background: #f9f9f9;
@@ -37,17 +38,14 @@
         padding: 15px;
         text-align: center;
     }
-    footer a {
-        color: #00c6ff;
-        text-decoration: none;
-    }
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>🚀 Welcome to KK FUNDA YOUTUBE CHANNEL NEW BATCH ON JAN 25th</h1>
-    <h3>Training | Development | Consulting</h3>
+    <h1>🚀 Welcome to Tejesh Application</h1>
+    <h3>Java Web Application Running on Kubernetes</h3>
 </header>
 
 <div class="container">
@@ -72,31 +70,22 @@
         <p><b>Client Host Name:</b> <%= request.getRemoteHost() %></p>
     </div>
 
-    <!-- Contact Info -->
+    <!-- Service Link -->
     <div class="info-card text-center">
-        <img src="images/kkfunda.jpg" alt="KK FUNDA Logo" width="120" class="mb-3 rounded-circle shadow">
-        <h4>KK FUNDA</h4>
-        <p><b>Address:</b> Martha Halli, Bangalore</p>
-        <p><b>Phone:</b> +91-9676831734</p>
-        <p><b>Email:</b> <a href="mailto:kkeducationblr@gmail.com">kkeducationblr@gmail.com</a></p>
-        <a href="mailto:kkeducation@gmail.com" class="btn btn-primary mt-2">📧 Mail to KK FUNDA</a>
-    </div>
+        <h4>⚙️ Services</h4>
 
-    <!-- Service Links -->
-    <div class="info-card text-center">
-        <h4>⚙️ Our Services</h4>
-        <p><a href="services/employee/getEmployeeDetails" class="btn btn-success">Get Employee Details</a></p>
+        <a href="services/employee/getEmployeeDetails" 
+           class="btn btn-success">
+           Get Employee Details
+        </a>
+
     </div>
 
 </div>
 
 <footer>
-    <p>© 2024 KK FUNDA Training & Development Center</p>
-    <p><small>Powered by <a href="https://google.com/">KK FUNDA</a></small></p>
+    <p>© 2026 Tejesh</p>
 </footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
