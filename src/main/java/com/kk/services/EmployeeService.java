@@ -15,20 +15,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/employee")
 public class EmployeeService {
 
+    @RequestMapping(
+        value = "/getEmployeeDetails",
+        method = RequestMethod.GET
+    )
+    @ResponseBody
+    public String getEmployeeDetails(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            HttpSession httpSession
+    ) throws JSONException {
 
-        @RequestMapping(value = "/getEmployeeDetails", method = RequestMethod.GET)
-        @ResponseBody
-        String uploadImage(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession)
-                        throws JSONException {
+        JSONObject js = new JSONObject();
 
-                JSONObject js = new JSONObject();
-                js.put("Name", "KK FUNDA");
-                js.put("Calling Name", "KK FUNDA");
-                js.put("DOB", "08-Nov-2011");
-                js.put("Hobbies", "Reading Technical Blogs,Teaching, Helping to Poor People..");
-                js.put("Places he like", "His native place");
+        js.put("Name", "Tejesh");
+        js.put("Calling Name", "Tejesh");
+        js.put("Role", "DevOps Engineer");
+        js.put("DOB", "01-Jan-2000");
+        js.put("Skills", "Docker, Kubernetes, AWS, Terraform, Ansible");
+        js.put("Hobbies", "Learning new technologies, Following tech blogs");
+        js.put("Location", "India");
 
-                return js.toString();
+        return js.toString();
+    }
 }
-}
-
